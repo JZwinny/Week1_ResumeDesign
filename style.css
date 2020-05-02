@@ -3,7 +3,8 @@
 }
 
 body{
-	font-family: Noto Sans JP, Roboto, PingFang TC, 微軟正黑體;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* header */
@@ -34,7 +35,6 @@ body{
 
 /* profile */
 .section-profile{
-	font-family: 蘋方-繁;
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
@@ -57,37 +57,33 @@ body{
 	margin-bottom: 16px;
 }
 
-.section-profile ul{
+.profile-list{
+	list-style: none;
+	font-weight: 200;
+	margin-bottom: 48px;
 	margin-left: 48px;
-	list-style-type: none;
 }
 
-.section-profile p{
+.profile-list li{
 	font-size: 24px;
 	line-height: 36px;
+	padding-bottom: 24px;
+
 }
 
-.profile-list-point{
-	position: absolute;
-	margin-top: 10px;
-	margin-left: 16px;
+.profile-list .profile-point:before{
+	content: "";
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
 	background-color: #96A9C4;
-}
-
-.section-profile .profile-list-1{
-	margin-bottom: 24px;
-}
-
-.section-profile .profile-list-2{
-	margin-bottom: 72px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -32px;
 }
 
 /* education */
 .section-education{
-	font-family: 蘋方-繁;
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
@@ -110,55 +106,42 @@ body{
 	margin-bottom: 16px;
 }
 
-.section-education ul{
+.edu-timeline{
+	list-style: none;
+	font-weight: 200;
+	margin-bottom: 48px;
 	margin-left: 48px;
-	list-style-type: none;
 }
 
-.section-education p{
+.edu-timeline li{
 	font-size: 24px;
 	line-height: 36px;
+	padding-bottom: 24px;
 }
 
-.item-1{
-	margin-bottom: 32px;
-}
-
-.section-timeline{
-	margin-bottom: 72px;
-}
-
-.section-timeline .point-1{
+.edu-timeline li:before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #96A9C4;
 	position: absolute;
 	margin-top: 10px;
-	margin-left: 16px;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	background-color: #96A9C4;
+	margin-left: -32px;
 }
 
-.section-timeline .point-2{
-	position: absolute;
-	margin-top: 80px;
-	margin-left: 16px;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	background-color: #96A9C4;
-}
-
-.section-timeline .line{
-	position: absolute;
-	margin-top: 24px;
-	margin-left: 24px;
+.edu-timeline .line:after{
+	content:"";
+	width: 1px;
 	height: 66px;
-	border-left: 1px solid #96A9C4;
+	background-color: #96A9C4;
+	position: absolute;
+	top: 88px;
+	left: 24px;
 }
 
 /* skills */
 .section-skills{
-	font-family: 蘋方-繁;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -175,10 +158,10 @@ body{
 
 .bg-skills{
 	width: 1200px;
-	height: 494px;
 	background: #415165;
 	margin: 0 auto;
 	padding-top: 24px;
+	padding-bottom: 56px;
 }
 
 .title-skills{
@@ -205,9 +188,9 @@ body{
 }
 
 .section-skills ul{
-	position: absolute;
 	margin-left: 492px;
 	list-style-type: none;
+	font-weight: 200;
 	font-size: 24px;
 	line-height: 36px;
 	color: #ffffff;
@@ -221,7 +204,6 @@ body{
 
 /* experience */
 .section-exp{
-	font-family: 蘋方-繁;
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
@@ -262,15 +244,18 @@ body{
 	width: 642px;
 	font-size: 20px;
 	line-height: 30px;
-	margin-bottom: 32px;
-}
-
-.content-exp .item{
+	font-weight: 200;
 	margin-bottom: 32px;
 }
 
 .content-exp img{
-	margin-bottom: 8px;
+	display: block;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.content-exp .item{
+	margin-bottom: 32px;
 }
 
 .section-exp .line{
@@ -283,9 +268,6 @@ body{
 
 /* footer */
 .footer{
-	font-family: 蘋方-繁;
-	width: 100%;
-	height: 401px;
 	background-color: #415165;
 	margin-top: 72px;
 }
@@ -321,6 +303,7 @@ body{
 	text-align: center;
 	font-size: 24px;
 	line-height: 36px;
+	font-weight: 200;
 	color: #ffffff;
 	margin-top: 32px;
 }
@@ -329,7 +312,10 @@ body{
 	margin-bottom: 16px;
 }
 
-.content-contact .img-center{
-	margin-left: 24px;
-	margin-right: 24px;
+.social-media{
+	margin: 0 auto;
+}
+
+.social-media img{
+	margin-right: 20px;
 }
